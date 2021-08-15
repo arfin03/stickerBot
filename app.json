@@ -1,6 +1,6 @@
 {
     "name": "SomeStickerBot",
-    "description": "https://telegram.dog/somestickerbot",
+    "description": "https://github.com/MoTechYT/stickerBot",
     "keywords": [
         "telegram",
         "best",
@@ -9,23 +9,23 @@
         "open",
         "source"
     ],
-    "success_url": "https://telegram.dog/somestickerbot",
-    "website": "https://github.com/eyaadh/stickerBot",
-    "repository": "https://github.com/eyaadh/stickerBot",
+    "success_url": "https://github.com/MoTechYT/stickerBot",
+    "website": "https://github.com/MoTechYT/stickerBot",
+    "repository": "https://github.com/MoTechYT/stickerBot",
     "env": {
         "ENV": {
             "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
             "value": "ANYTHING"
         },
-        "TG_BOT_TOKEN": {
+        "BOT_TOKEN": {
             "description": "Your bot token, as a string.",
             "required": true
         },
-        "TG_APP_ID": {
+        "API_ID": {
             "description": "Get this value from https://my.telegram.org",
             "required": true
         },
-        "TG_API_HASH": {
+        "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
             "required": true
         }
