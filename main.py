@@ -18,9 +18,9 @@ logging.getLogger(__name__)
 
 is_env = bool(os.environ.get("ENV", None))
 if is_env:
-    tg_app_id = int(os.environ.get("TG_APP_ID"))
-    tg_api_key = os.environ.get("TG_API_HASH")
-    bot_api_key = os.environ.get("TG_BOT_TOKEN")
+    tg_app_id = int(os.environ.get("API_ID"))
+    tg_api_key = os.environ.get("API_HASH")
+    bot_api_key = os.environ.get("BOT_TOKEN")
 
     some_sticker_bot = Client(
         api_id=tg_app_id,
@@ -120,9 +120,7 @@ async def rounded_rectangle(rectangle, xy, corner_radius, fill=None, outline=Non
 @some_sticker_bot.on_message(filters.command("start"))
 async def start_handler(c: Client, m: Message):
     await m.reply_text(
-        "Hi, I just create telegram sticker from the text messages you send me. \nMy creator @eyaadh did a YouTube "
-        "[video](https://youtu.be/dVrA9hit4ks) on how he created me. The link for my source is on the video "
-        "description, you can fork the project and make a better version of me.",
+        "👋Hi, Am Telegram Message Text Sticker Bot\n\nJust Send Text Message You Will Get Stickers",
         disable_web_page_preview=True
     )
 
@@ -130,10 +128,7 @@ async def start_handler(c: Client, m: Message):
 @some_sticker_bot.on_message(filters.command("help"))
 async def help_handler(c: Client, m: Message):
     await m.reply_text(
-        "Hi, I do not have much to say on help - I just create telegram stickers from the text messages you send me. "
-        "\nMy creator @eyaadh did a YouTube "
-        "[video](https://youtu.be/dVrA9hit4ks) on how he created me. The link for my source is on the video "
-        "description, you can fork the project and make a better version of me.",
+        "• Just Send Any Text You Will Get Your Text Sticker\n\n@Mo_Tech_YT",
         disable_web_page_preview=True
     )
 
@@ -223,7 +218,7 @@ async def create_sticker(c: Client, m: Message):
 
 @some_sticker_bot.on_message(filters.text & filters.private & (~filters.command("start") | ~filters.command("help")))
 async def create_sticker_private_handler(c: Client, m: Message):
-    s = await m.reply_text("...")
+    s = await m.reply_text("Waiting.....!")
     await create_sticker(c, m)
     await s.delete()
 
