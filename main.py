@@ -120,7 +120,7 @@ async def rounded_rectangle(rectangle, xy, corner_radius, fill=None, outline=Non
 @some_sticker_bot.on_message(filters.command("start"))
 async def start_handler(c: Client, m: Message):
     await m.reply_text(
-        "**👋Hi, Am Telegram Text to Sticker Bot**\n\n`just create telegram sticker from the text messages you send me Text Message.` **You Will Get Text Sticker**\n\n Team @Mo_Tech_YT**",
+        "**👋Hi,I Am Telegram Text to Sticker Bot**\n\n`Just Create Telegram Sticker From the Text Messages that You Send Me.` **You Will Get Text Sticker**\n\n Team Yukawa Beats**",
         disable_web_page_preview=True
     )
 
@@ -128,7 +128,7 @@ async def start_handler(c: Client, m: Message):
 @some_sticker_bot.on_message(filters.command("help"))
 async def help_handler(c: Client, m: Message):
     await m.reply_text(
-        "**•) Just Send Any Text You Will Get Your Text Sticker\n\n@Mo_Tech_YT**",
+        "**•) Just Send Any Text You Will Get Your Text Sticker\n\nPowered By Yukawa Beats**",
         disable_web_page_preview=True
     )
 
