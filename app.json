@@ -1,6 +1,6 @@
 {
     "name": "SomeStickerBot",
-    "description": "https://github.com/MoTechYT/stickerBot",
+    "description": "https://github.com/Yukawa-Beats/stickerBot",
     "keywords": [
         "telegram",
         "best",
@@ -9,9 +9,9 @@
         "open",
         "source"
     ],
-    "success_url": "https://github.com/MoTechYT/stickerBot",
-    "website": "https://github.com/MoTechYT/stickerBot",
-    "repository": "https://github.com/MoTechYT/stickerBot",
+    "success_url": "https://github.com/Yukawa-Beats/stickerBot",
+    "website": "https://github.com/Yukawa-Beats/stickerBot",
+    "repository": "https://github.com/Yukawa-Beats/stickerBot",
     "env": {
         "ENV": {
             "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
