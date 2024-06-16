@@ -3,7 +3,7 @@
 
 You send it a text, it will return you the content as a telegram sticker. A working example for the bot can be found [here.](https://telegram.dog/somestickerbot)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yukawa-Beats/stickerBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/arfin03/stickerBot)
 
 ## Cloning and Run:
 1. `git clone https://github.com/eyaadh/stickerBot.git`, to clone the repository.
